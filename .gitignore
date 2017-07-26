@@ -3,6 +3,7 @@
 /db
 /deps
 /*.ez
+web/static/assets/bower_components
 
 # Generated on crash by the VM
 erl_crash.dump
