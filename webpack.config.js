@@ -1,10 +1,10 @@
 var glob = require("glob");
 
 module.exports = {
-  entry: "./web/static/js/app.js",
+  entry: {'app': "./web/static/js/app.js", 'polymer': "./web/static/js/polymer.js"},
   output: {
-    path: "./priv/static/js",
-    filename: "app.js"
+    path: "./priv/static/build",
+    filename: "[name].js"
   },
   module: {
     loaders: [

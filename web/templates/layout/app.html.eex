@@ -29,6 +29,7 @@
       </main>
 
     </div> <!-- /container -->
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="<%= static_path(@conn, "/build/app.js") %>"></script>
+    <script src="<%= static_path(@conn, "/build/polymer.js") %>"></script>
   </body>
 </html>
