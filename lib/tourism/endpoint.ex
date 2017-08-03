@@ -10,7 +10,7 @@ defmodule Tourism.Endpoint do
   plug Plug.Static,
     at: "/", from: :tourism, gzip: false,
     #cache_control_for_etags: "public, max-age=86400",
-    only: ~w(build favicon.ico robots.txt)
+    only: ~w(build favicon.ico robots.txt images)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
