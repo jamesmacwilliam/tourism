@@ -13,13 +13,13 @@
     "style-loader": "^0.18.2"
   },
   "devDependencies": {
-    "babel-brunch": "~6.0.0",
-    "clean-css-brunch": "~2.0.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
     "copy-webpack-plugin": "^4.0.1",
-    "css-brunch": "~2.0.0",
     "file-loader": "^0.11.2",
-    "javascript-brunch": "~2.0.0",
+    "polymer-webpack-loader": "^1.2.6",
     "uglify-js-brunch": "~2.0.1",
-    "webpack": "^1.11.0"
+    "webpack": "^3.4.1"
   }
 }
