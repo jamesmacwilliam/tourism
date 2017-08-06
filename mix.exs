@@ -19,7 +19,7 @@ defmodule Tourism.Mixfile do
   def application do
     [mod: {Tourism, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :faker, :ex_machina, :phoenix_ecto, :postgrex]]
   end
 
   # Specifies which paths to compile per environment.
@@ -38,6 +38,8 @@ defmodule Tourism.Mixfile do
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
+     {:ex_machina, "~> 2.0"},
+     {:faker, "~> 0.8"},
      {:cowboy, "~> 1.0"}]
   end
 

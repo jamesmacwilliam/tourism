@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :tourism, Tourism.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: System.get_env("USERNAME") || System.get_env("USER"),
+  password: "",
   database: "tourism_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
