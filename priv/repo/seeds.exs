@@ -1,11 +1,26 @@
 # Script for populating the database. You can run it as:
 #
 #     mix run priv/repo/seeds.exs
-#
-# Inside the script, you can read and write to any of your
-# repositories directly:
-#
-#     Tourism.Repo.insert!(%Tourism.SomeModel{})
-#
-# We recommend using the bang functions (`insert!`, `update!`
-# and so on) as they will fail if something goes wrong.
+
+Faker.start
+
+{:ok, _} = Application.ensure_all_started(:ex_machina)
+
+defmodule Tourism.DatabaseSeeder do
+  import Tourism.Factory
+
+  def seed do
+    seed_users
+  end
+
+  def clear do
+    Repo.delete_all
+  end
+
+
+  defp seed_users do
+    insert_list 20, :user
+  end
+end
+
+Tourism.DatabaseSeeder.seed
